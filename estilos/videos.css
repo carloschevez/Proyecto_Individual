@@ -1,0 +1,191 @@
+@font-face{
+	font-family: ProximaNova-Regular;
+	src: url('../fuentes/ProximaNova-Regular.otf');
+	
+}
+
+@font-face{
+	font-family: Novecento;
+	src: url('../fuentes/Novecento.otf');
+}
+
+#barra_lat,
+#barra_lat ul,
+#barra_lat li,
+#barra_lat a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 1;
+	position: relative;
+}
+
+#barra_lat {
+	border-bottom: 5px solid #656659;
+	width: 200px;
+	overflow-y: scroll;
+	max-height: 100%; 
+	min-height: 100%; 
+
+}
+
+#barra_lat a {
+	line-height: 1.3;
+}
+
+#barra_lat > ul > li {
+	background: #cb1717;
+	background: -moz-linear-gradient(#cb1717 0%, #9d1212 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cb1717), color-stop(100%, #9d1212));
+	background: -webkit-linear-gradient(#cb1717 0%, #9d1212 100%);
+	background: -o-liner-gradient(#cb1717 0%, #9d1212 100%);
+	background: -ms-linear-gradient(#cb1717 0%, #9d1212 100%);
+	background: linear-gradient(#cb1717 0%, #9d1212 100%);
+}
+
+#barra_lat > ul > li:hover {
+	background: #bd1515;
+	background: -moz-linear-gradient(#bd1515 0%, #8f1010 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bd1515), color-stop(100%, #8f1010));
+	background: -webkit-linear-gradient(#bd1515 0%, #8f1010 100%);
+	background: -o-linear-gradient(#bd1515 0%, #8f1010 100%);
+	background: -ms-linear-gradient(#bd1515 0%, #8f1010 100%);
+	background: linear-gradient(#bd1515 0%, #8f1010 100%);
+}
+
+#barra_lat > ul > li > a {
+	font-family: ProximaNova-Semibold, sans-serif;
+	font-size: 18px;
+	display: block;
+	color: #ffffff;
+	text-shadow: 0 -1px 1px #751d0c;
+}
+
+#barra_lat > ul > li > a > span {
+	display: block;
+	padding: 10px 10px;
+}
+
+
+#barra_lat > ul > li > a:hover {
+	text-decoration: none;
+}
+
+#barra_lat > ul > li.active {
+	border-bottom: none;
+}
+
+#barra_lat > ul > li.has-sub > a span {
+	background: url(../imagenes/icon_plus.png) 96% center no-repeat;
+}
+
+#barra_lat > ul > li.has-sub.active > a span {
+	background: url(../imagenes/icon_minus.png) 96% center no-repeat;
+}
+
+#barra_lat ul ul.primero{
+	display: block;
+	background: #fff;
+}
+
+#barra_lat ul ul{
+	display: none;
+	background: #fff;
+}
+
+#barra_lat ul ul li {
+	padding: 0;
+	border-bottom: 1px solid #d4d4d4;
+	border-top: none;
+	background: #f7f7f7;
+	background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+	background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+	background: -o-liner-gradient(#f7f7f7 0%, #ececec 100%);
+	background: -ms-linear-gradient(#f7f7f7 0%, #ececec 100%);
+	background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+}
+
+#barra_lat ul ul li:hover {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #fffad6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fffad6));
+	background: -webkit-linear-gradient(top, #ffffff 0%, #fffad6 100%);
+	background: -o-linear-gradient(top, #ffffff 0%, #fffad6 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%, #fffad6 100%);
+	background: linear-gradient(top, #ffffff 0%, #fffad6 100%);
+}
+
+#barra_lat ul ul a {
+	font-family: "ProximaNova-Light", sans-serif;
+	padding: 10px 10px;
+	display: block;
+	color: #676767;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#barra_lat ul ul img {
+	width: 100%;
+}
+
+#barra_lat ul ul a:hover {
+	color: #e94f31;
+}
+
+#contenedor{
+	width:100%;
+	height: calc(100% - 55px);
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}
+
+#sim{
+	background: url('../imagenes/bg.jpg');
+	overflow:hidden;
+	width: calc(100% - 200px);
+	height: calc(100% + 5px);
+	position: absolute;
+	top: 0px;
+	left: 200px;
+}
+
+#capa{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align:center;
+	z-index:10;
+}
+
+#drop{
+	background: gray;
+	width: 100%;
+	height: 100%;
+	-webkit-box-shadow: 0px 0px 10px 2px #000;
+	-moz-box-shadow: 0px 0px 10px 2px #000;
+	-ms-box-shadow: 0px 0px 10px 2px #000;
+	-o-box-shadow: 0px 0px 10px 2px #000;
+	box-shadow: 0px 0px 10px 2px #000;
+}
+
+#mensaje{
+	font-size: 40px;
+	font-family: "Novecento";
+	text-align: center;
+	display: none;
+	background: red;
+	opacity: 0.6;
+	height: 100%;
+	padding-top:25%;
+}
+
+
+

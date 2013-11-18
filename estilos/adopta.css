@@ -1,0 +1,258 @@
+@font-face{
+	font-family: ProximaNova-Regular;
+	src: url('../fuentes/ProximaNova-Regular.otf');
+}
+
+@font-face{
+	font-family: Novecento;
+	src: url('../fuentes/Novecento.otf');
+}
+
+@font-face{
+	font-family: ProximaNova-Bold;
+	src: url('../fuentes/ProximaNova-Bold.otf');
+}
+
+body{
+	background-image: url(../imagenes/bg.jpg);
+}
+
+#contenedor{
+	width:100%;
+	height: calc(100% - 50px);
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}
+
+#bienvenida{
+	background: url(../imagenes/adopta.jpg) no-repeat center center fixed;
+	background-size: auto 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	font-family: "ProximaNova-Bold";
+	font-size: 30px;
+	color: white;
+	box-shadow: 0px 0px 35px #000;
+}
+
+#info{
+	font-family: "ProximaNova-Regular";
+	font-weight: normal;
+	font-size: 18px;
+	color: black;
+	background-color: #fff;
+	border: 1px dashed;
+	border-radius: 10px;
+	margin: 0 10%;
+	padding: 14px 20px;
+	width: 700px;
+	height: auto;
+	opacity: 0.7;
+	-webkit-transition-property:all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property:all;
+	-moz-transition-duration: 1s;
+	-ms-transition-property:all;
+	-ms-transition-duration: 1s;
+	-o-transition-property:all;
+	-o-transition-duration: 1s;
+	transition-property:all;
+	transition-duration: 1s;
+}
+
+#info:hover{
+	opacity: 1;
+	-webkit-transition-property:all;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property:all;
+	-moz-transition-duration: 1s;
+	-ms-transition-property:all;
+	-ms-transition-duration: 1s;
+	-o-transition-property:all;
+	-o-transition-duration: 1s;
+	transition-property:all;
+	transition-duration: 1s;
+}
+
+#boton_perro{
+	font-family: "Novecento";
+	font-weight: normal;
+	font-size: 30px;
+	color: #0B3B2E;
+	background-color: #088A4B;
+	border: 1px solid;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px #000;
+	padding: 14px 20px;
+	margin: 10px;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	-webkit-transition-property:background;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background;
+	-o-transition-duration: 0.5s;
+	transition-property:background;
+	transition-duration: 0.5s;
+}
+
+#boton_perro:hover{
+	cursor: pointer;
+	background-color: #5FB404;
+	-webkit-transition-property:background-color;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background-color;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background-color;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background-color;
+	-o-transition-duration: 0.5s;
+	transition-property:background-color;
+	transition-duration: 0.5s;
+}
+
+#boton_gato{
+	font-family: "Novecento";
+	font-weight: normal;
+	font-size: 30px;
+	color: #DF0101;
+	background-color: #FA5858;
+	border: 1px solid;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px #000;
+	padding: 14px 20px;
+	margin: 10px;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	-webkit-transition-property:background;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background;
+	-o-transition-duration: 0.5s;
+	transition-property:background;
+	transition-duration: 0.5s;
+}
+
+#boton_gato:hover{
+	cursor: pointer;
+	background-color: #F79F81;
+	-webkit-transition-property:background-color;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background-color;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background-color;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background-color;
+	-o-transition-duration: 0.5s;
+	transition-property:background-color;
+	transition-duration: 0.5s;
+}
+
+
+.info_perro{
+	font-family: "ProximaNova-Regular";
+	font-weight: normal;
+	font-size: 18px;
+	color: #0B3B2E;
+	background-color: #088A4B;
+	border: 1px solid;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px #000;
+	padding: 14px 20px;
+	margin: 10px;
+	width: 90%;
+	height: auto;
+	text-align: center;
+	-webkit-transition-property:background;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background;
+	-o-transition-duration: 0.5s;
+	transition-property:background;
+	transition-duration: 0.5s;
+}
+
+.info_perro:hover{
+	cursor: pointer;
+	background-color: #5FB404;
+	-webkit-transition-property:background-color;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background-color;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background-color;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background-color;
+	-o-transition-duration: 0.5s;
+	transition-property:background-color;
+	transition-duration: 0.5s;
+}
+
+.info_gato{
+	font-family: "ProximaNova-Regular";
+	font-weight: normal;
+	font-size: 18px;
+	color: #DF0101;
+	background-color: #FA5858;
+	border: 1px solid;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px #000;
+	padding: 14px 20px;
+	margin: 10px;
+	width: 90%;
+	height: auto;
+	text-align: center;
+	-webkit-transition-property:background;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background;
+	-o-transition-duration: 0.5s;
+	transition-property:background;
+	transition-duration: 0.5s;
+}
+
+.info_gato:hover{
+	cursor: pointer;
+	background-color: #F79F81;
+	-webkit-transition-property:background-color;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-property:background-color;
+	-moz-transition-duration: 0.5s;
+	-ms-transition-property:background-color;
+	-ms-transition-duration: 0.5s;
+	-o-transition-property:background-color;
+	-o-transition-duration: 0.5s;
+	transition-property:background-color;
+	transition-duration: 0.5s;
+}
+
+
+#bienvenida h1{
+	color: black;
+	font-family: "Novecento";
+	font-size: 60px;
+	text-shadow: 0px 0px 10px #fff;
+}
+

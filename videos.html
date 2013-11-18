@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Animalia</title>
+
+		<link rel='stylesheet' type='text/css' href='estilos/menu.css'/>
+		<link rel='stylesheet' type='text/css' href='estilos/videos.css'/>
+		<link rel="stylesheet" href="estilos/tooltip.css"/>
+
+		<script src="scripts/jquery-1.10.2.min.js"></script>
+		<script src='scripts/jquery-1.10.3.min.js'></script>
+		<script src="scripts/tooltip.js"></script> <!-- EL USO DE ESTE PLUGIN CORRESPONDE A MI APORTE DE INVESTIGACIÓN -->
+		<script src='scripts/videos.js'></script>
+	</head>
+
+	<body>
+	<div id='menu'>
+		<ul>
+		   <li><a href='index.html'><span>Inicio</span></a></li>
+		   <li class='activo'><a href='videos.html'><span>Animales en vivo</span></a></li>
+		   <li><a href='adopta.html'><span>Adopta</span></a></li>
+		   <li><a href='about.html'><span>Acerca de m&iacute;</span></a></li>
+		</ul>
+	</div>
+
+	<div id ='contenedor'>
+		<div id='barra_lat'>
+			<ul>
+				<li id ="primero" class='has-sub'><a href='#'><span>Animales Dom&eacute;sticos</span></a>
+					<ul>
+						<li><a href='#'><center>
+
+							<img class = "seleccionado" src="imagenes/videos/gato.png" onmousedown= "cambiar_id(1)"><br>
+							<span>Gatos</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/perro.png" onmousedown= "cambiar_id(2)"><br>
+							<span>Perros</span>
+						</center></a></li>
+					</ul>
+				</li>
+
+				<li class='has-sub'><a href='#'><span>Vida Silvestre</span></a>
+					<ul>
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/oso.jpg" onmousedown= "cambiar_id(3)"><br>
+							<span>Osos</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/oso_polar.jpg" onmousedown= "cambiar_id(4)"><br>
+							<span>Osos Polares</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/panda.jpg" onmousedown= "cambiar_id(5)"><br>
+							<span>Pandas</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/perezoso.jpg" onmousedown= "cambiar_id(6)"><br>
+							<span>Perezosos</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/titi.jpg" onmousedown= "cambiar_id(7)"><br>
+							<span>Tit&iacute;es</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/vaca.jpg" onmousedown= "cambiar_id(8)"><br>
+							<span>Terneros</span>
+						</center></a></li>
+					</ul>
+				</li>
+
+				<li class='has-sub'><a href='#'><span>Vida Marina</span></a>
+					<ul>
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/pez_payaso.jpg" onmousedown= "cambiar_id(9)"><br>
+							<span>Peces Payaso</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/tiburon.jpg" onmousedown= "cambiar_id(10)"><br>
+							<span>Tiburones</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/tortuga_marina.jpg" onmousedown= "cambiar_id(11)"><br>
+							<span>Tortugas Marinas</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/arrecife.jpg" onmousedown= "cambiar_id(12)"><br>
+							<span>Arrefice</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/caverna_azul.png" onmousedown= "cambiar_id(13)"><br>
+							<span>Caverna Azul</span>
+						</center></a></li>
+					</ul>
+				</li>
+
+				<li class='has-sub'><a href='#'><span>Aves</span></a>
+					<ul>
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/aguila_negra.jpg" onmousedown= "cambiar_id(14)"><br>
+							<span>&Aacute;guilas Negras</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/aguila_pescadora.jpg"  onmousedown= "cambiar_id(15)"><br>
+							<span>&Aacute;guila Pescadora</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/ave_salvaje.png"  onmousedown= "cambiar_id(16)"><br>
+							<span>Aves Salvajes</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/perico.png"  onmousedown= "cambiar_id(17)"><br>
+							<span>Pericos</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/pinguino.png"  onmousedown= "cambiar_id(18)"><br>
+							<span>Pingüinos</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/pollo.png"  onmousedown= "cambiar_id(19)"><br>
+							<span>Pollitos</span>
+						</center></a></li>
+					</ul>
+				</li>
+
+				<li class='has-sub'><a href='#'><span>Insectos</span></a>
+					<ul>
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/abeja.jpg" onmousedown= "cambiar_id(20)"><br>
+							<span>Abejas</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/hormiga.jpg" onmousedown= "cambiar_id(21)"><br>
+							<span>Hormigas</span>
+						</center></a></li>
+
+						<li><a href='#'><center>
+							<img class = "seleccionado" src="imagenes/videos/cuca.png" onmousedown= "cambiar_id(22)"><br>
+							<span>Cucarachas</span>
+						</center></a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+		<div id = "sim">
+			<div id = "drop"></div>
+
+			<div id = "capa">
+				<div id = "mensaje">¡SUELTA EL V&Iacute;DEO AQU&Iacute;!</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

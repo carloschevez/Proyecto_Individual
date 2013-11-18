@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Animalia</title>
+
+		<link rel='stylesheet' type='text/css' href='estilos/menu.css'>
+		<link rel='stylesheet' type='text/css' href='estilos/adopta.css'>
+
+		<script src="scripts/jquery-1.10.2.min.js"></script>
+		<script src='scripts/jquery-1.10.3.min.js'></script>
+		<script src='scripts/adopta.js'></script>
+	</head>
+
+	<body>
+    <div id='menu'>
+		<ul>
+		   <li><a href='index.html'><span>Inicio</span></a></li>
+		   <li><a href='videos.html'><span>Animales en vivo</span></a></li>
+		   <li class='activo'><a href='adopta.html'><span>Adopta</span></a></li>
+		   <li><a href='about.html'><span>Acerca de m&iacute;</span></a></li>
+		</ul>
+	</div>
+
+	<div id ="contenedor">
+		<div id = "bienvenida">
+			<h1>¡LLÉVATE A UN AMIGO A CASA!</h1>
+			<center>
+			<div id = "info">
+				¡No compres, ADOPTA!<br><br>
+				Estamos vinculados con asociaciones protectoras de animales y refugios que tienen animalitos a su disponibilidad.<br><br>
+				Es fácil hacerlo: selecciona si deseos un perrito o un gatito, llena el formulario con tus datos y acepta las condiciones.
+
+				
+				<div id="boton_perro" onclick="adopta(1)">Quiero un perro</div>
+				<div id="boton_gato" onclick="adopta(2)">Quiero un gato</div>
+
+			</div>
+			</center>
+		</div>	
+	</div>
+</html>
